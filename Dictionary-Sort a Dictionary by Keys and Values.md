@@ -1,49 +1,33 @@
-# 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
-
-This Python program demonstrates how to sort a dictionary:
-- Alphabetically by keys
-- Alphabetically by values
-
----
+# Exception Handling in Python: Avoiding Index Errors
 
 ## 🎯 Aim
-
-To write a Python program that sorts a dictionary's:
-- Keys in alphabetical order
-- Values in alphabetical order
-
----
+To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list.
 
 ## 🧠 Algorithm
+1. Define a list `list1` with some integer elements.
+2. Use a **try-except** block:
+   - In the `try` block, attempt to access an index that is out of range (e.g., `list1[5]`).
+   - In the `except` block, catch the error and print a custom message `"You're out of list range"`.
+3. Print the result based on whether the index access succeeds or fails.
 
-1. **Start the program.**
-2. **Define** a dictionary with key-value pairs.
-3. **Sort by Keys**:
-   - Use `sorted(dictionary.items())`
-   - Convert the result to a dictionary using `dict()`
-4. **Sort by Values**:
-   - Use `sorted(dictionary.items(), key=lambda item: item[1])`
-   - Convert the result to a dictionary using `dict()`
-5. **Display** the original and sorted dictionaries.
-6. **End the program.**
-
----
-
-## 🧪Program
+## 🧾 Program
 
 ```
-data=eval(input())
-sort=dict(sorted(data.items()))
-print("Keys and Values sorted in alphabetical order by the key")
-for key, value in sort.items():
-    print(f"({key}, {value}) ",end="")
+list1=[5, 10, 20] 
+
+try: 
+
+   print(list1[5]) 
+
+except: 
+
+   print("You're out of list range")
 ```
 
-## Sample Output
+## Output
 
-<img width="1263" height="110" alt="image" src="https://github.com/user-attachments/assets/4c4086bd-f6b4-4069-babd-cac99459049d" />
-
+<img width="742" height="179" alt="image" src="https://github.com/user-attachments/assets/c2585293-a6fc-4324-a399-5102f15958e8" />
 
 ## Result
- Thus, the program has been successfully executed.
+Thus, the program has been successfully executed.
 
